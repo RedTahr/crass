@@ -43,7 +43,9 @@
 
 #Which grep to use:
 #OSX:
-GREP_COMMAND="/opt/local/bin/grep"
+#GREP_COMMAND="/opt/local/bin/grep"
+# brew install grep, which installs GNU grep prefixed with g, so ggrep
+GREP_COMMAND="/usr/local/Cellar/grep/3.3/bin/ggrep"
 #Most other *nix
 #GREP_COMMAND="grep"
 #Do not remove -rP if you don't know what you are doing, otherwise you probably break this script
